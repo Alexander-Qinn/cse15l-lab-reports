@@ -1,4 +1,5 @@
-#CSE Lab Report Introduction
-![Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcse.ucsd.edu%2Fundergraduate%2Fstudent-opportunities&psig=AOvVaw2E8RMVrH84oyME56yXU1TD&ust=1642127740802000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjD8dnYrfUCFQAAAAAdAAAAABAD)
-##This is life
-[Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+# CSE Lab Report Introduction
+![Image](https://yt3.ggpht.com/ytc/AKedOLR8EhO9xd-GBqt71jkacPlZkI5ehFusk00YrlUd=s900-c-k-c0x00ffffff-no-rj)
+## This is life
+[Secret to Success](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+*Enjoy your day! Hope you liked my video!
