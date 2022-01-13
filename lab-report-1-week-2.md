@@ -1,11 +1,11 @@
 ![Image](LabReport.png)
 1.Installing VScode\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To install VScode Go to [https://code.visualstudio.com](https://code.visualstudio.com) 
+To install VScode Go to [https://code.visualstudio.com](https://code.visualstudio.com) 
 Once it opens it should display\
 ![Image](VSCODEstartpage.png)
 <Br/>
 2.Remotely Connecting\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For many jobs and professions in the CS field you will have to connect to a external server.\
+For many jobs and professions in the CS field you will have to connect to a external server.\
 The first thing you need to accomplish is to look up your course specific account at [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)\
 After that you will move into your vsCode and then proceed to use the terminal for next few steps\
 Using the\ 
@@ -16,7 +16,7 @@ This is what it should end up looking like.
 ![Image](RealStep2.png)
 <Br/>
 3.Trying Some Commands\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There are many useful commands, use this sheet below and try some yourself!
+There are many useful commands, use this sheet below and try some yourself!
 ![Image](CommandList.png)
 <Br/>
 4.Moving files with SCP\
@@ -31,6 +31,8 @@ However you will begin noticing that to troubleshoot will take forever. Mostly b
 Use the ssh-keygen command to create your passphrase and then mkdir the passphrase file generated into your server directory after signing back in. Once that is done you can now sign in via passphrase as shown below!
 ![Image](passPhrase.png)
 <Br/>
-6.Optimize Remote Running
+6.Optimize Remote Running\
+Finally lets optimize our running, although the SSH key helps, it is important to keep speeding up our efficiency. Although SCP is a good method rsync is much faster as explained below!
+![Image](faster.png)
 <Br/>
 
