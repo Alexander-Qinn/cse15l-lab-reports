@@ -6,7 +6,7 @@ Once it opens it should display\
 
 ![Image](VSCODEstartpage.png)
 <Br/>
-2. Remotely Connecting
+2. Remotely Connecting\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For many jobs and professions in the CS field you will have to connect to a external server.\
 The first thing you need to accomplish is to look up your course specific account at [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)\
 After that you will move into your vsCode and then proceed to use the terminal for next few steps\
@@ -17,7 +17,9 @@ where zz is replaced by your account id, type yes to respond and begin inputting
 This is what it should end up looking like.
 ![Image](Step2.png)
 <Br/>
-3.Trying Some Commands
+3.Trying Some Commands\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There are many useful commands, use this sheet below and try some yourself!
+![Image]
 <Br/>
 4.Moving files with SCP
 <Br/>
