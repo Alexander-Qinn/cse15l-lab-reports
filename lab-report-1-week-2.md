@@ -2,8 +2,6 @@
 1. Installing VScode\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To install VScode Go to [https://code.visualstudio.com](https://code.visualstudio.com) 
 Once it opens it should display\
-
-
 ![Image](VSCODEstartpage.png)
 <Br/>
 2. Remotely Connecting\
@@ -15,14 +13,18 @@ $ ssh cs15lwi22zz@ieng6.ucsd.edu\
 where zz is replaced by your account id, type yes to respond and begin inputting your password.\
 **Your password will not appear as you type\
 This is what it should end up looking like.
-![Image](Step2.png)
+![Image](RealStep2.png)
 <Br/>
 3.Trying Some Commands\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There are many useful commands, use this sheet below and try some yourself!
 ![Image](CommandList.png)
 <Br/>
 4.Moving files with SCP\
-
+One of the main actions you will be doing is moving and saving files from your main computer to the server\
+You will run this command\
+scp [fileName]] [userName]\
+You will be prompted for a password\
+![Image](Step2.png)
 <Br/>
 5.Setting an SSH Key
 <Br/>
