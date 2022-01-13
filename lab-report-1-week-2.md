@@ -1,10 +1,10 @@
 ![Image](LabReport.png)
-1. Installing VScode\
+1.Installing VScode\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To install VScode Go to [https://code.visualstudio.com](https://code.visualstudio.com) 
 Once it opens it should display\
 ![Image](VSCODEstartpage.png)
 <Br/>
-2. Remotely Connecting\
+2.Remotely Connecting\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For many jobs and professions in the CS field you will have to connect to a external server.\
 The first thing you need to accomplish is to look up your course specific account at [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)\
 After that you will move into your vsCode and then proceed to use the terminal for next few steps\
@@ -26,7 +26,10 @@ scp [fileName]] [userName]\
 You will be prompted for a password\
 ![Image](Step2.png)
 <Br/>
-5.Setting an SSH Key
+5.Setting an SSH Key\
+However you will begin noticing that to troubleshoot will take forever. Mostly because putting in a password everytime can get annoying. This is why we can set up a SSH key shortcut.\
+Use the ssh-keygen command to create your passphrase and then mkdir the passphrase file generated into your server directory after signing back in. Once that is done you can now sign in via passphrase as shown below!
+![Image](passPhrase.png)
 <Br/>
 6.Optimize Remote Running
 <Br/>
