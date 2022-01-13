@@ -2,7 +2,7 @@
 1.Installing VScode\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To install VScode Go to [https://code.visualstudio.com](https://code.visualstudio.com) 
 Once it opens it should display\
-![Image]
+![Image](VSCODEstartpage.png)
 <Br/>
 2.Remotely Connecting
 <Br/>
