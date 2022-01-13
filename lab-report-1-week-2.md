@@ -1,1 +1,1 @@
-![Image](/Users/alexq/Desktop/Screen Shot 2022-01-12 at 6.47.34 PM.png)
+![Image](LabReport.png)
