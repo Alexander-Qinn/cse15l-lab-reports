@@ -15,7 +15,7 @@ $ ssh cs15lwi22zz@ieng6.ucsd.edu\
 where zz is replaced by your account id, type yes to respond and begin inputting your password.\
 **Your password will not appear as you type\
 This is what it should end up looking like.
-![Image]
+![Image](Step2.png)
 <Br/>
 3.Trying Some Commands
 <Br/>
