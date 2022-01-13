@@ -21,7 +21,8 @@ This is what it should end up looking like.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There are many useful commands, use this sheet below and try some yourself!
 ![Image](CommandList.png)
 <Br/>
-4.Moving files with SCP
+4.Moving files with SCP\
+
 <Br/>
 5.Setting an SSH Key
 <Br/>
