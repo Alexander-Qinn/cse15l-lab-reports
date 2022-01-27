@@ -8,3 +8,5 @@
 Stay tuned for part 2 of succeeding
 <Br/>
 [Lab Report 1](https://alexander-qinn.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+<Br/>
+[Lab Report 2](https://alexander-qinn.github.io/cse15l-lab-reports/lab-report-2-week-4.html)
