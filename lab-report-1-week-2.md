@@ -40,7 +40,7 @@ You will be prompted for a password\
 
 However you will begin noticing that to troubleshoot will take forever. Mostly because putting in a password everytime can get annoying. This is why we can set up a SSH key shortcut.\
 Use the ssh-keygen command to create your passphrase and then mkdir the passphrase file generated into your server directory after signing back in. Once that is done you can now sign in via passphrase as shown below!
-![Image](passPhrase.png)
+![Image](PassPhrase.png)
 <Br/>
 
 # 6.Optimize Remote Running
