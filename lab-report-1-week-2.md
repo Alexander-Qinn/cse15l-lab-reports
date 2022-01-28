@@ -1,5 +1,7 @@
 ![Image](LabReport.png)
-#Installing VScode\
+
+# 1.Installing VScode\
+
 To install VScode Go to [https://code.visualstudio.com](https://code.visualstudio.com) 
 Once it opens it should display\
 ![Image](VSCODEstartpage.png)
