@@ -49,7 +49,9 @@ Use the ssh-keygen command (`ssh-keygen`)to create your passphrase and then `mkd
 
 # 6.Optimize Remote Running
 
-Finally lets optimize our running, although the SSH key helps, it is important to keep speeding up our efficiency. Although SCP is a good method rsync is much faster as explained below!
+Finally lets optimize our running, although the SSH key helps, it is important to keep speeding up our efficiency. One optimization I tried was to use semi-colons to run all my java and javac commands in one line. Therefore, to do all of this, I just had to login, changing my code, running the code for around 3 minutes for a total of 8 keystrokes, copy and pasting my commands, using the semi-colon technique, and running the code. That process took me around 13 keystrokes. Furthermore, I wanna Iterate that this is not the most efficient method, just the one I personally use.
+
+Although SCP is a good method rsync is much faster as explained below!
 ![Image](faster.png)
 <Br/>
 For More information head to our class github link!
