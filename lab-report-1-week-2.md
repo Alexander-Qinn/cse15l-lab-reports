@@ -23,6 +23,12 @@ This is what it should end up looking like.
 
 There are many useful commands, use this sheet below and try some yourself!
 ![Image](CommandList.png)
+Some commands I tried include
+The main commands that I tried were `cd ~`, `cd`, and `ls`\
+I found out the `cd~` command takes you to the User Account home folder\
+The normal `cd` command changes the current directory to your root directory\
+Finally the `ls` command lists the files in the current directory
+
 <Br/>
 
 # 4.Moving files with SCP
