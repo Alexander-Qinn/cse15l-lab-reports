@@ -29,7 +29,7 @@ There are many useful commands, use this sheet below and try some yourself!
 
 One of the main actions you will be doing is moving and saving files from your main computer to the server\
 You will run this command\
-scp [fileName]] [userName]\
+`scp [fileName]] [userName]`\
 You will be prompted for a password\
 ![Image](Step2.png)
 <Br/>
@@ -37,7 +37,7 @@ You will be prompted for a password\
 # 5.Setting an SSH Key
 
 However you will begin noticing that to troubleshoot will take forever. Mostly because putting in a password everytime can get annoying. This is why we can set up a SSH key shortcut.\
-Use the ssh-keygen command to create your passphrase and then mkdir the passphrase file generated into your server directory after signing back in. Once that is done you can now sign in via passphrase as shown below!
+Use the ssh-keygen command (`ssh-keygen`)to create your passphrase and then `mkdir` the passphrase file generated into your server directory after signing back in. Once that is done you can now sign in via passphrase as shown below!
 ![Image](PassPhrase.png)
 <Br/>
 
