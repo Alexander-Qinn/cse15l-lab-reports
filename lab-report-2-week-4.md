@@ -17,7 +17,7 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 
 As a lab group me and Shad had agreed that the while looped seemed
 very unnecesary to use to loop through our objects and instead we
-switched it out with a `for(String line : markdown)` loop. Furthermore with the out of memory error, we decided to correct it with `if (line.subscript(")", line.length))`
+switched it out with a `for(String line : markdown)` loop. Furthermore with the out of memory error, we decided to correct it with `if (line.subscript(")", line.length))` in order to prevent the program from reading the rest of the files.
 
 # 2. Code Change 2
 
@@ -35,6 +35,8 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, e
         at MarkdownParse.getLinks(MarkdownParse.java:18)
         at MarkdownParse.main(MarkdownParse.java:27)
 ```
+
+The bug present was that the program couldn't differientiate empty links and real links within the brackets. Then it would attempt to find the parenthesis and then throw an IndexOutOfBoundsExceptions. To overcome this we simply check for the indices of the brackets and parenthesis.
 # 3. Code Change 3
 
 ## Dealing with an empty Link
@@ -49,3 +51,5 @@ alexq@Alexanders-MacBook-Pro cse15l-lab-reports % java MarkdownParse test-file3.
 39
 [page.com]
 ```
+
+This is a case where the program should skip all extra commentary and text within brackets and parenthesis in order to fish out the link. The original would only find `[]`  without reading anything between the parenthesis.
