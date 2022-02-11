@@ -11,8 +11,8 @@ Symptom:
         at java.base/java.lang.StringLatin1.newString(StringLatin1.java:769)
         at java.base/java.lang.String.substring(String.java:2709)
         at MarkdownParse.getLinks(MarkdownParse.java:18)
-        at MarkdownParse.main(MarkdownParse.java:27)
-```
+        at MarkdownParse.main(MarkdownParse.java:27)```
+
 # 2. Code Change 2
 
 ## Dealing with text after code
@@ -26,8 +26,7 @@ Symptom:
         at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
         at java.base/java.lang.String.substring(String.java:2704)
         at MarkdownParse.getLinks(MarkdownParse.java:18)
-        at MarkdownParse.main(MarkdownParse.java:27)
-```
+        at MarkdownParse.main(MarkdownParse.java:27)```
 
 # 3. Code Change 3
 
@@ -40,5 +39,4 @@ Symptom:
 
 ```alexq@Alexanders-MacBook-Pro cse15l-lab-reports % java MarkdownParse test-file3.md
 39
-[page.com]
-```
+[page.com]```
