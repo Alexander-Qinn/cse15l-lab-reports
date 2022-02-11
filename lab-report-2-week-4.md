@@ -15,6 +15,10 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
         at MarkdownParse.main(MarkdownParse.java:27)
 ```
 
+As a lab group me and Shad had agreed that the while looped seemed
+very unnecesary to use to loop through our objects and instead we
+switched it out with a `for(String line : markdown)` loop. Furthermore with the out of memory error, we decided to correct it with `if (line.subscript(")", line.length))`
+
 # 2. Code Change 2
 
 ## Dealing with text after code
