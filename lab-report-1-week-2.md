@@ -54,7 +54,8 @@ To optimize my work pace I start by opening two terminals.
 Next I `$ ssh cs15lwi22zz@ieng6.ucsd.edu` to sign in.
 Then I go to the unlogged in terminal to `scp [fileName]] [userName] : [Directory]`\
 Finally I go back to my school account terminal to compile and run using
-my java and javac commands.
+my java and javac commands
+This in total is 6 keystrokes
 
 
 Although SCP is a good method rsync is much faster as explained below!
