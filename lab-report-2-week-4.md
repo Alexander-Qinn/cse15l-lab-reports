@@ -5,7 +5,7 @@
 ![Image](Paren.png)\
 Test File: [First Test](https://github.com/Alexander-Qinn/cse15l-lab-reports/blob/main/test-file1.md)
 
-\Symptom: \
+Symptom:
 
 ```Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
         at java.base/java.lang.StringLatin1.newString(StringLatin1.java:769)
