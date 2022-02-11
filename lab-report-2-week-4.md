@@ -30,13 +30,16 @@ switched it out with a `for(String line : markdown)` loop. Furthermore with the 
 Test File: [Second Test](https://github.com/Alexander-Qinn/cse15l-lab-reports/blob/main/test-file2.md)
 
 Symptom:
-
 ```
+
+alexq@Alexanders-MacBook-Pro cse15l-lab-reports % java MarkdownParse test-file2.md
+
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 27
         at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
         at java.base/java.lang.String.substring(String.java:2704)
         at MarkdownParse.getLinks(MarkdownParse.java:18)
         at MarkdownParse.main(MarkdownParse.java:27)
+        
 ```
 
 The bug present was that the program couldn't differientiate empty links and real links within the brackets. Then it would attempt to find the parenthesis and then throw an IndexOutOfBoundsExceptions. To overcome this we simply check for the indices of the brackets and parenthesis.
