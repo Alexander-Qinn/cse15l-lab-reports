@@ -7,7 +7,7 @@
 ![Image](SS1.png)\
 ![Image](SS2.png)\
 ![Image](SS3.png)\
-![Image](SS4.png)\
+![Image](SS4.png)
 
 ## 2. Show logging into your ieng6 account after doing this and compiling and running the tests for your repository
 
