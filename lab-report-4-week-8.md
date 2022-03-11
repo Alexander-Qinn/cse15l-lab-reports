@@ -201,10 +201,16 @@ FAILURES!!!
 
 **Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.**
 
+The issue in snippet 1 is simply that it doesn't really check the formatting of the brackets that check if the file is a link or not. I guess the easiest way to fix it would be to add an if statement to check the formatting of the brackets and then using the find link method. If that doesn't work for some reason then it would definitely be a more involved change.
+
 ## Q2
 
 **Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.**
 
+Snippet 2 basically failed our code through a extreme amount of parentheses, but the easiest fix would simply to write a code that looks for the specific pair of parenthesis, or ignore the initial ones outright.
+
 ## Q3
 
 **Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.**
+
+Snippet 3 I don't think has a good fix, my parser is built around a line by line detection, so it simply would not effectively read the url in that case. Extra spaces would just make it a different array instance and thus fail the code. A major change that could fix it would probably build the parser with a char by char reader or string by string. Maybe using a buffered reader instead of just a Scanner.
