@@ -14,3 +14,5 @@ Stay tuned for part 2 of succeeding
 [Lab Report 3](https://alexander-qinn.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
 <Br/>
 [Lab Report 4](https://alexander-qinn.github.io/cse15l-lab-reports/lab-report-4-week-8.html)
+<Br/>
+[Lab Report 4](https://alexander-qinn.github.io/cse15l-lab-reports/lab-report-5-week-10.html)
