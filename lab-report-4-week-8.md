@@ -67,3 +67,134 @@ java.lang.AssertionError: expected:<[`google.com, google.com, ucsd.edu]> but was
 FAILURES!!!
 ```
 They failed to include the ucsd.edu link due to the second bracket which made their code consider it empty instead of holding a link.
+
+# Snippet 2: 
+
+![Snippet2](snip2.png)
+
+Links will read between brackets producing 3 separate links
+
+### My Test:
+```
+@Test
+    public void testSnippet2() throws IOException {
+        String regFile = Files.readString(Path.of("./snippet-2.md"));
+        String[] regLines = regFile.split("\n");
+        assertEquals(List.of("a.com", "a.com(())", "example.com"), MarkdownParse.getLinks(regLines));
+    }
+```
+
+### Their Test:
+```
+@Test
+    public void testSnippet2() throws IOException {
+        ArrayList<String> Image = new ArrayList<>();
+        Image.add("a.com");
+        Image.add("a.com(())");
+        Image.add("exampe.com");
+        String ImageTest = MarkdownParse.converter("snippet-2.md");
+        assertEquals(Image, MarkdownParse.getLinks(ImageTest));
+    }
+```
+
+## CompileTime/RunTime 
+
+My test fails due to not reading the last parenthesis on line 2:
+```
+testSnippet2(MarkdownParseTest)
+java.lang.AssertionError: expected:<[a.com, a.com(()), exampe.com]> but was:<[a.com, a.com((]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at MarkdownParseTest.testSnippet2(MarkdownParseTest.java:65)
+
+FAILURES!!!
+```
+
+Their code both printed the wrong link in line 2 as well as
+didn't read the last link in the snippet: 
+```
+testSnippet2(MarkdownParseTest)
+java.lang.AssertionError: expected:<[a.com, a.com(()), exampe.com]> but was:<[a.com, a.com((]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at MarkdownParseTest.testSnippet2(MarkdownParseTest.java:65)
+
+FAILURES!!!
+```
+
+# Snippet 3: 
+
+![Snippet3](snip3.png)
+
+links will be read within brackets and produce 3 different links.
+
+### My Test:
+```
+@Test
+    public void testSnippet3() throws IOException {
+        String regFile = Files.readString(Path.of("./snippet-3.md"));
+        String[] regLines = regFile.split("\n");
+        assertEquals(List.of("https://www.twitter.com", "https://ucsd-cse15l-w22.github.io/", 
+            "https://cse.ucsd.edu/"), MarkdownParse.getLinks(regLines));
+    }
+```
+
+### Their Test:
+```
+@Test
+    public void testSnippet3() throws IOException {
+        ArrayList<String> Image = new ArrayList<>();
+        Image.add("https://www.twitter.com");
+        Image.add("https://ucsd-cse15l-w22.github.io/");
+        Image.add("https://cse.ucsd.edu/");
+        String ImageTest = MarkdownParse.converter("snippet-3.md");
+        assertEquals(Image, MarkdownParse.getLinks(ImageTest));
+    }
+```
+
+## CompileTime/RunTime 
+
+My code fails to read any links provided:
+```
+testSnippet3(MarkdownParseTest)
+java.lang.AssertionError: expected:<[https://www.twitter.com, https://ucsd-cse15l-w22.github.io/, https://cse.ucsd.edu/]> but was:<[, , ]>       
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at MarkdownParseTest.testSnippet3(MarkdownParseTest.java:21)
+
+FAILURES!!!
+```
+
+Their code fails due to printing all breaks and lines between links:
+```
+testSnippet3(MarkdownParseTest)
+java.lang.AssertionError: expected:<[https://www.twitter.com, https://ucsd-cse15l-w22.github.io/, https://cse.ucsd.edu/]> but was:<[
+    https://www.twitter.com
+,
+    https://ucsd-cse15l-w22.github.io/
+, github.com
+
+And there's still some more text after that.
+
+[this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/
+
+
+
+]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at MarkdownParseTest.testSnippet3(MarkdownParseTest.java:65)
+
+FAILURES!!!
+```
+
+---
+
