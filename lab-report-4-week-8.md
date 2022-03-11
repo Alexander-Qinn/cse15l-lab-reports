@@ -9,7 +9,7 @@
 
 ### Snippet 1: 
 
-![Snippet1](snippet-1.png)
+![Snippet1](snip1.png)
 
 Test file should be printing the links
 
