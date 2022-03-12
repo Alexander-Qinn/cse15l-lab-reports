@@ -13,4 +13,4 @@
 
 ## 3. Show an scp command copying a file to your account using just the alias you chose.
 
-![Image](scpFile.png)
+![Image](scpFile2.png)
